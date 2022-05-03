@@ -7,9 +7,6 @@ word_length = len(chosen_word)
 incorrect_guesses = []
 guess_count = 0
 
-#Testing code
-print(f'Pssst, the solution is {chosen_word}.')
-
 #Create blanks
 display = []
 for _ in range(word_length):
@@ -33,5 +30,6 @@ while '_' in display:
 
 
 if '_' not in display:
+    print(f'{display}')
     print(f'Game over! You found the word: {chosen_word} in {guess_count} guesses.')
     print(f'Incorrect guesses: {incorrect_guesses}')
